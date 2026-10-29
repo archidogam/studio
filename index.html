@@ -56,11 +56,14 @@ input,select,textarea{width:100%;margin-top:6px;padding:12px;border:1px solid #d
 .faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:10px}
 .faq summary{font-weight:700;cursor:pointer}
 .faq p{margin-top:10px;color:var(--sub)}
+.topnav{display:flex;gap:16px;align-items:center;font-size:14px;font-weight:600}.topnav a:not(.btn){text-decoration:none;color:var(--sub)}@media(max-width:640px){.topnav a:not(.btn){display:none}}
+.demo{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;align-items:center}@media(max-width:760px){.demo{grid-template-columns:1fr}}.demo img{width:100%;border-radius:14px;border:1px solid var(--line);display:block}.demo ul{list-style:none;margin:14px 0 22px}.demo li{padding:6px 0;border-bottom:1px dashed var(--line)}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 22px}.links a{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px;text-decoration:none}
 footer{padding:36px 0 60px;color:var(--sub);font-size:13px;border-top:1px solid var(--line)}
 </style>
 </head>
 <body>
-<header><div class="wrap"><div class="logo">건축도감 스튜디오<span>for 건축사사무소</span></div><a class="btn ghost" href="#apply">무료 진단 신청</a></div></header>
+<header><div class="wrap"><div class="logo">건축도감 스튜디오<span>for 건축사사무소</span></div><nav class="topnav"><a href="demo/">포트폴리오 예시</a><a href="https://archidogam.com/?from=studio" target="_blank" rel="noopener">건축도감</a><a class="btn ghost" href="#apply">무료 진단 신청</a></nav></div></header>
 
 <main>
 <div class="wrap hero">
@@ -93,6 +96,47 @@ footer{padding:36px 0 60px;color:var(--sub);font-size:13px;border-top:1px solid 
       <div class="step"><div class="n">03</div><h3>작품은 보내기만</h3><p>준공 사진과 개요를 메일이나 카톡으로 보내면 작품 페이지로 올려드립니다.</p></div>
       <div class="step"><div class="n">04</div><h3>건축도감에도 소개</h3><p>상 받은 건축 답사 지도 건축도감에 사무소와 작품이 함께 소개됩니다.</p></div>
     </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="wrap">
+    <h2>이런 홈페이지를 만들어요</h2>
+    <p class="lead">작품 사진이 주인공인 구성이 기본이에요. 아래는 가상의 사무소로 만든 예시예요.</p>
+    <div class="demo">
+      <a href="demo/"><img src="demo/img/p1.jpg" alt="포트폴리오 예시 사이트 대표 이미지" loading="lazy"></a>
+      <div>
+        <ul>
+          <li>작품 목록과 분류(주거·상업·리노베이션)</li>
+          <li>작품마다 개요 표 (위치·용도·규모·준공·사진 출처)</li>
+          <li>모바일 우선, 카톡·인스타 공유 미리보기</li>
+          <li>건축도감 작품 페이지로 바로 연결</li>
+        </ul>
+        <a class="btn" href="demo/">포트폴리오 예시 보기</a>
+      </div>
+    </div>
+    <p class="note">예시의 사무소와 사진은 실제가 아니에요(사진은 AI로 만든 이미지). 실제 제작에는 사무소가 권리를 가진 사진만 씁니다.</p>
+  </div>
+</section>
+
+<section id="archidogam">
+  <div class="wrap">
+    <h2>건축도감과 연결돼요</h2>
+    <p class="lead">건축도감은 상 받은 건축을 지도에서 찾고 답사 기록을 남기는 서비스예요. 지금 건축가·사무소 페이지가 165개 있어요.</p>
+    <div class="steps" style="margin-bottom:22px">
+      <div class="step"><div class="n">건축도감 사무소 등록</div><h3>지도에 작품을 소개</h3><p>답사객이 보는 지도와 작품 페이지에 사무소가 실려요. 기본 등록은 무료예요.</p></div>
+      <div class="step"><div class="n">건축도감 스튜디오</div><h3>사무소 홈페이지를 제작·관리</h3><p>사무소 자체 홈페이지를 만들고 작품 업데이트를 맡아요. 이 페이지의 서비스예요.</p></div>
+      <div class="step"><div class="n">함께 쓰면</div><h3>서로 이어져요</h3><p>건축도감 작품 페이지에서 사무소 홈페이지로, 홈페이지에서 건축도감 지도로 연결돼요. 요금은 따로예요.</p></div>
+    </div>
+    <p class="note" style="margin:0 0 6px">건축도감에 실린 사무소 예시</p>
+    <div class="links">
+      <a href="https://archidogam.com/architects/oca-임재용/?from=studio" target="_blank" rel="noopener">오씨에이 임재용</a>
+      <a href="https://archidogam.com/architects/core-유종수/?from=studio" target="_blank" rel="noopener">코어건축 유종수</a>
+      <a href="https://archidogam.com/architects/roa-허서구/?from=studio" target="_blank" rel="noopener">RoA 허서구</a>
+      <a href="https://archidogam.com/architects/fabrikr-김동규/?from=studio" target="_blank" rel="noopener">패브리커 김동규</a>
+      <a href="https://archidogam.com/architects/?from=studio" target="_blank" rel="noopener">전체 건축가 보기</a>
+    </div>
+    <a class="btn ghost" href="https://archidogam.com/about.html?from=studio#studio" target="_blank" rel="noopener">건축도감 사무소 무료 등록 안내</a>
   </div>
 </section>
 
@@ -149,6 +193,7 @@ footer{padding:36px 0 60px;color:var(--sub);font-size:13px;border-top:1px solid 
     <p class="lead">신청하시면 영업일 3일 안에 진단 리포트를 메일로 보내드립니다. 진단만 받고 끝내셔도 됩니다.</p>
     <iframe name="gf_sink" id="gf_sink" style="display:none"></iframe>
     <form id="applyForm" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSfnLLxCFt1kkrkGF01A0jKbCP-nM45eTnmSpgbzkFTF4F05Eg/formResponse" target="gf_sink">
+      <input type="hidden" name="entry.1202157087" id="srcField">
       <div class="row">
         <label>사무소 이름<input name="entry.1496744425" required></label>
         <label>담당자 이름<input name="entry.1119106127" required></label>
@@ -182,6 +227,7 @@ footer{padding:36px 0 60px;color:var(--sub);font-size:13px;border-top:1px solid 
 
 <footer><div class="wrap">건축도감 스튜디오 · archidogam@gmail.com</div></footer>
 <script>
+(function(){const p=new URLSearchParams(location.search);let s=p.get("from")||p.get("utm_source")||"";if(s)sessionStorage.setItem("studio_from",s);s=s||sessionStorage.getItem("studio_from")||"";const r=document.referrer?new URL(document.referrer).hostname:"";if(r&&!r.includes("archidogam.github.io"))s=(s?s+" / ":"")+"ref:"+r;document.getElementById("srcField").value=s||"direct";})();
 const f=document.getElementById('applyForm');let sent=false;f.addEventListener('submit',()=>{sent=true;const b=document.getElementById('submitBtn');b.disabled=true;b.textContent='보내는 중…';});document.getElementById('gf_sink').addEventListener('load',()=>{if(sent){location.href='thanks.html';}});
 document.querySelectorAll('[data-plan]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('plan').value=a.dataset.plan;}));
 </script>
