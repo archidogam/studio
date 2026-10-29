@@ -224,9 +224,22 @@ footer{padding:36px 0 60px;color:var(--sub);font-size:13px;border-top:1px solid 
     <details><summary>건축도감은 무엇인가요?</summary><p>국내외 상 받은 건축을 지도에서 찾고 답사 기록을 남기는 서비스입니다. archidogam.com</p></details>
   </div>
 </section>
+<section id="about-archidogam">
+  <div class="wrap">
+    <h2>건축도감을 더 알아보세요</h2>
+    <p class="lead">건축도감은 상 받은 건축을 지도에서 찾고, 직접 가 보고, 답사 기록을 남기는 서비스예요. 국내외 건축 700곳이 넘는 장소와 그 건축을 만든 건축가·사무소를 함께 소개해요. 건축도감 스튜디오는 그 경험으로 사무소 홈페이지를 만듭니다.</p>
+    <div class="steps">
+      <a class="step" href="https://archidogam.com/map.html?from=studio_footer" target="_blank" rel="noopener" style="text-decoration:none"><div class="n">지도</div><h3>건축도감 지도 ›</h3><p>수상작과 명작을 지도에서 찾아보세요.</p></a>
+      <a class="step" href="https://archidogam.com/about.html?from=studio_footer" target="_blank" rel="noopener" style="text-decoration:none"><div class="n">소개</div><h3>건축도감 소개 ›</h3><p>왜 만들었는지, 어떤 건축이 실리는지, 사무소 무료 등록 안내까지.</p></a>
+      <a class="step" href="https://www.youtube.com/@archidogam" target="_blank" rel="noopener" style="text-decoration:none"><div class="n">유튜브</div><h3>@archidogam ›</h3><p>세계적인 건축가 인터뷰와 건축 이야기를 짧은 영상으로 소개해요.</p></a>
+      <a class="step" href="https://www.instagram.com/archidogam/" target="_blank" rel="noopener" style="text-decoration:none"><div class="n">인스타그램</div><h3>@archidogam ›</h3><p>이번 주 가 볼 만한 건축을 사진과 함께 올려요.</p></a>
+      <a class="step" href="https://www.threads.com/@archidogam" target="_blank" rel="noopener" style="text-decoration:none"><div class="n">스레드</div><h3>@archidogam ›</h3><p>답사 이야기와 서비스 소식을 나눠요.</p></a>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer><div class="wrap">건축도감 스튜디오 · archidogam@gmail.com</div></footer>
+<footer><div class="wrap">건축도감 스튜디오 · archidogam@gmail.com · <a href="https://archidogam.com/?from=studio_footer" target="_blank" rel="noopener">archidogam.com</a> · <a href="https://www.youtube.com/@archidogam" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.instagram.com/archidogam/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.threads.com/@archidogam" target="_blank" rel="noopener">Threads</a></div></footer>
 <script>
 (function(){const p=new URLSearchParams(location.search);let s=p.get("from")||p.get("utm_source")||"";if(s)sessionStorage.setItem("studio_from",s);s=s||sessionStorage.getItem("studio_from")||"";const r=document.referrer?new URL(document.referrer).hostname:"";if(r&&!r.includes("archidogam.github.io"))s=(s?s+" / ":"")+"ref:"+r;document.getElementById("srcField").value=s||"direct";})();
 const f=document.getElementById('applyForm');let sent=false;f.addEventListener('submit',()=>{sent=true;const b=document.getElementById('submitBtn');b.disabled=true;b.textContent='보내는 중…';});document.getElementById('gf_sink').addEventListener('load',()=>{if(sent){location.href='thanks.html';}});
